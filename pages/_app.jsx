@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/next";
 
 import Layout from "../components/Layout";
 
@@ -37,6 +38,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
+      <Analytics />
     </Layout>
   );
 }
