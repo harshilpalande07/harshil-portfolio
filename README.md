@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Harshil Portfolio
 
 Modern futuristic developer portfolio built using Next.js, React, Framer Motion, and Tailwind CSS.
@@ -24,3 +25,7 @@ Modern futuristic developer portfolio built using Next.js, React, Framer Motion,
 
 ## Developer
 Harshil Palande
+=======
+# harshil-portfolio
+A futuristic AI-powered 3D portfolio built with Next.js, Tailwind CSS, Framer Motion, and modern UI/UX animations showcasing web development, AI systems, cybersecurity, and innovative digital experiences.
+>>>>>>> 1644bcaf6904daf3a245964bd4834f19e9358a7e
