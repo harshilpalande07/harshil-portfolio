@@ -14,9 +14,38 @@ const Services = () => {
       {/* gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-[#07111f] to-purple-900/20 z-0" />
 
-      {/* blur glow effects */}
-      <div className="absolute top-20 left-20 w-72 h-72 bg-cyan-500/20 rounded-full blur-[140px]" />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-purple-500/20 rounded-full blur-[160px]" />
+      {/* improved mobile glow effects */}
+      <div
+        className="
+          absolute 
+          top-10 left-0
+          w-40 h-40
+          sm:w-56 sm:h-56
+          md:w-72 md:h-72
+          bg-cyan-400/30
+          rounded-full
+          blur-[90px]
+          sm:blur-[120px]
+          md:blur-[140px]
+          opacity-80
+        "
+      />
+
+      <div
+        className="
+          absolute 
+          bottom-0 right-0
+          w-44 h-44
+          sm:w-60 sm:h-60
+          md:w-80 md:h-80
+          bg-purple-500/30
+          rounded-full
+          blur-[100px]
+          sm:blur-[130px]
+          md:blur-[160px]
+          opacity-80
+        "
+      />
 
       <Circles />
 
