@@ -8,74 +8,101 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className="bg-[#0a192f] min-h-screen overflow-hidden">
-      {/* text */}
-      <div className="w-full h-full bg-gradient-to-r from-blue-900/20 via-black/40 to-cyan-900/20">
-        <div className="text-center flex flex-col justify-center pt-28 md:pt-32 xl:pt-40 xl:text-left min-h-screen container mx-auto px-6">
-          {/* title */}
-          <motion.h1
-            variants={fadeIn("down", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="text-[38px] leading-tight md:text-[55px] xl:text-[78px] font-bold"
-          >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
-          </motion.h1>
+    <div className="bg-[#0a192f] min-h-screen overflow-hidden relative">
+      {/* particles */}
+      <div className="absolute inset-0 z-0 opacity-70">
+        <ParticlesContainer />
+      </div>
 
-          {/* subtitle */}
-          <motion.p
-            variants={fadeIn("down", 0.3)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-[95%] md:max-w-[600px] xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-16 text-sm md:text-base xl:text-lg"
-          >
-            Passionate about building futuristic digital experiences,
-            AI-powered systems, and modern web applications
-            focused on creativity, performance, and innovation.
-          </motion.p>
-          {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
+      {/* content */}
+      <div className="relative z-10 w-full h-full bg-gradient-to-r from-blue-900/20 via-black/40 to-cyan-900/20">
+        <div className="container mx-auto min-h-screen px-5 flex flex-col xl:flex-row items-center justify-center xl:justify-between">
+
+          {/* LEFT SIDE */}
+          <div className="text-center xl:text-left pt-28 md:pt-36 xl:pt-0 max-w-[700px]">
+
+            {/* title */}
+            <motion.h1
+              variants={fadeIn("down", 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="
+                text-[42px]
+                leading-tight
+                font-bold
+                sm:text-[52px]
+                md:text-[65px]
+                xl:text-[78px]
+              "
+            >
+              Transforming Ideas <br />
+              Into <span className="text-accent">Digital Reality</span>
+            </motion.h1>
+
+            {/* subtitle */}
+            <motion.p
+              variants={fadeIn("down", 0.3)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="
+                mt-5
+                text-[15px]
+                leading-7
+                text-white/80
+                max-w-[95%]
+                mx-auto
+                xl:mx-0
+                sm:text-[16px]
+                md:text-[17px]
+                xl:max-w-xl
+              "
+            >
+              Passionate about building futuristic digital experiences,
+              AI-powered systems, and modern web applications focused on
+              creativity, performance, and innovation.
+            </motion.p>
+
+            {/* button */}
+            <motion.div
+              variants={fadeIn("down", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="
+                mt-10
+                flex
+                justify-center
+                xl:justify-start
+                scale-90
+                sm:scale-100
+              "
+            >
+              <ProjectsBtn />
+            </motion.div>
           </div>
+
+          {/* RIGHT SIDE IMAGE */}
           <motion.div
-            variants={fadeIn("down", 0.4)}
+            variants={fadeIn("up", 0.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            transition={{ duration: 1, ease: "easeInOut" }}
+            className="
+              relative
+              mt-10
+              xl:mt-0
+              w-[260px]
+              sm:w-[320px]
+              md:w-[420px]
+              xl:w-[650px]
+            "
           >
-            <ProjectsBtn />
+            <Avatar />
           </motion.div>
         </div>
-      </div>
-      {/* image */}
-      <div className="w-full h-full absolute right-0 bottom-0 overflow-hidden">
-        {/* bg img */}
-        <div
-          role="img"
-          className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
-          aria-hidden
-        />
-
-        {/* particles */}
-        <div className="hidden md:block">
-        <ParticlesContainer />
-        </div>
-
-        {/* avatar */}
-        <motion.div
-          variants={fadeIn("up", 0.5)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[300px] md:max-w-[500px] xl:max-w-[737px] max-h-[678px] absolute -bottom-10 md:-bottom-16 lg:bottom-0 right-0 lg:right-[8%]"
-        >
-          <Avatar />
-        </motion.div>
       </div>
     </div>
   );
