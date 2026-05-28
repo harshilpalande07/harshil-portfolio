@@ -95,8 +95,8 @@ const Home = () => {
               bottom-0
               right-0
               w-[220px]
-              sm:w-[320px]
-              md:w-[420px]
+              sm:w-[300px]
+              md:w-[350px]
               xl:w-[650px]
               opacity-70
               sm:opacity-90
