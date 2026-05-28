@@ -9,7 +9,7 @@ import {
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-7 text-3xl">
+    <div className="flex items-center gap-x-3 text-3xl">
 
       {/* github */}
       <Link
