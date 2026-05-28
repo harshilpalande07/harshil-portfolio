@@ -93,11 +93,12 @@ const Home = () => {
             className="
 absolute
 bottom-0
-right-[2%]
-w-[180px]
-sm:w-[240px]
-md:w-[320px]
-xl:w-[480px]
+right-[1%]
+w-[140px]
+sm:w-[190px]
+md:w-[260px]
+lg:w-[340px]
+xl:w-[420px]
 opacity-90
 "
           >
