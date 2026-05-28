@@ -37,35 +37,6 @@ const workSlides = {
         },
       ],
     },
-
-    {
-      images: [
-        {
-          title: "System Monitoring Tool",
-          category: "Analytics",
-          path: "/thumb3.jpg",
-          link: "https://github.com/harshilpalande07",
-        },
-        {
-          title: "Digital Marketing System",
-          category: "Web Platform",
-          path: "/thumb1.jpg",
-          link: "https://github.com/harshilpalande07",
-        },
-        {
-          title: "AI Data Analyzer",
-          category: "Machine Learning",
-          path: "/thumb2.jpg",
-          link: "https://github.com/harshilpalande07",
-        },
-        {
-          title: "Future Tech UI",
-          category: "UI / UX Design",
-          path: "/thumb4.jpg",
-          link: "https://github.com/harshilpalande07",
-        },
-      ],
-    },
   ],
 };
 
